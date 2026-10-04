@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Home 2 | WriteBright — Small Practice. Beautiful Progress.</title>
+<meta name="description" content="An editorial look at WriteBright: structured handwriting and calligraphy classes for children aged 4+, with before-and-after samples, age-based programs and parent progress tracking." />
+<meta name="keywords" content="handwriting classes for kids, calligraphy for children, handwriting improvement programme, parent dashboard" />
+<meta name="theme-color" content="#5B4B8A" />
+<link rel="canonical" href="https://www.writebright.example/home2.html" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Small Practice. Beautiful Progress. | WriteBright" />
+<meta property="og:description" content="Structured handwriting and calligraphy classes that help children develop stronger writing habits and confidence." />
+<meta property="og:url" content="https://www.writebright.example/home2.html" />
+<meta property="og:image" content="assets/images/og-cover.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: { DEFAULT: "#5B4B8A", 50: "#F6F4FB", 100: "#ECE9F5", 200: "#DCD5EC", 300: "#8F83B8", 400: "#7A68AD", 500: "#5B4B8A", 600: "#4C3E74", 700: "#3F3460", 800: "#332A4D", 900: "#241E36" },
+          cream: { DEFAULT: "#FFF1C7", 50: "#FFFAF0", 100: "#FFF7E3", 200: "#FFE6A3", 300: "#F7D97E" },
+          ink: { DEFAULT: "#252525", 300: "#A5A5A5", 400: "#7C7C7C", 500: "#5F5F5F", 600: "#4A4A4A", 700: "#3B3B3B", 800: "#2E2E2E" },
+          accent: { DEFAULT: "#F4A261", 100: "#FDECDC", 200: "#FBD5B4", 600: "#E2894A", 700: "#C4703A" }
+        },
+        fontFamily: {
+          sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+          hand: ['Caveat', 'Segoe Script', 'Bradley Hand', 'cursive']
+        },
+        boxShadow: {
+          wb: '0 10px 30px -12px rgba(91,75,138,.22), 0 2px 6px rgba(37,37,37,.04)',
+          'wb-lg': '0 24px 60px -20px rgba(91,75,138,.3), 0 4px 12px rgba(37,37,37,.05)'
+        }
+      }
+    }
+  };
+</script>
+</head>
+
+<body class="bg-cream-50 text-ink antialiased">
+<div id="navbar"></div>
+
+<main id="main">
+
+  <!-- ================= SPLIT HERO ================= -->
+  <section class="relative overflow-hidden wb-paper-cream" aria-labelledby="h2-hero-title">
+    <div class="pointer-events-none absolute inset-0 wb-dots opacity-40" aria-hidden="true"></div>
+
+    <div class="relative mx-auto w-full max-w-[1280px] px-5 sm:px-6 pt-10 pb-14 sm:pt-14 lg:pt-16 lg:pb-20">
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+
+        <!-- text column -->
+        <div class="lg:col-span-6 xl:col-span-5 wb-reveal">
+          <p class="wb-eyebrow mb-5"><span aria-hidden="true">✎</span> Home 2 · The Editorial View</p>
+          <h1 id="h2-hero-title" class="mb-5 font-extrabold text-[1.95rem] sm:text-[2.25rem]" style="font-size:clamp(2.15rem,1.2rem+3.4vw,3.6rem)">
+            Small Practice.<br />
+            <span style="color:var(--wb-primary);font-size:1.18em;line-height:1.05">Beautiful Progress.</span>
+          </h1>
+          <p class="wb-lead mb-7 max-w-lg">
+            Structured handwriting and calligraphy classes that help children develop stronger
+            writing habits and confidence.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-3 mb-9">
+            <a href="contact.html?intent=enroll" class="wb-btn wb-btn-primary wb-btn-lg">Start Enrolment</a>
+            <a href="#h2-programs" class="wb-btn wb-btn-outline wb-btn-lg">Browse Programs</a>
+          </div>
+
+          <!-- index list -->
+          <nav aria-label="On this page" class="wb-notebook py-5 pr-5 wb-reveal" data-delay="3">
+            <p class="text-[0.72rem] font-bold uppercase tracking-widest mb-3" style="color:var(--wb-primary)">On this page</p>
+            <ol class="list-none m-0 p-0 grid sm:grid-cols-2 gap-x-5 gap-y-1 text-[0.93rem] font-semibold">
+              <li><a class="wb-footer-link" href="#h2-compare" style="color:var(--wb-ink-700)">01 — Before &amp; After</a></li>
+              <li><a class="wb-footer-link" href="#h2-programs" style="color:var(--wb-ink-700)">02 — Program Categories</a></li>
+              <li><a class="wb-footer-link" href="#h2-instructors" style="color:var(--wb-ink-700)">03 — Instructors</a></li>
+              <li><a class="wb-footer-link" href="#h2-progress" style="color:var(--wb-ink-700)">04 — Progress Preview</a></li>
+              <li><a class="wb-footer-link" href="#h2-voices" style="color:var(--wb-ink-700)">05 — Parent Voices</a></li>
+              <li><a class="wb-footer-link" href="#h2-pricing" style="color:var(--wb-ink-700)">06 — Pricing &amp; FAQ</a></li>
+            </ol>
+          </nav>
+        </div>
+
+        <!-- visual column -->
+        <div class="lg:col-span-6 xl:col-span-7 wb-reveal" data-delay="2">
+          <div class="relative">
+            <div class="wb-card overflow-hidden ">
+             <img src="assets\images\img7.avif"
+                   alt="Illustration of a young child seated at a desk practising letter formation with a pencil on a lined notebook, with an alphabet chart and pencil holder nearby."
+                   width="760" height="640" class="w-full h-auto" />
+                       </div>
+
+            <div class="absolute -bottom-6  right-2 sm:left-6 sm:right-auto sm:w-[300px] bg-white rounded-2xl p-4 shadow-lg border" style="border-color:rgba(91,75,138,.28)">
+              <p class="text-[0.7rem] font-bold uppercase tracking-widest mb-1" style="color:var(--wb-primary)">Inside every class</p>
+              <ul class="list-none m-0 p-0 text-[0.9rem] font-medium flex flex-col gap-1.5">
+                <li class="flex items-center gap-2"><span style="color:var(--wb-accent-ink)" aria-hidden="true">▸</span> Stroke warm-up</li>
+                <li class="flex items-center gap-2"><span style="color:var(--wb-accent-ink)" aria-hidden="true">▸</span> Guided letter practice</li>
+                <li class="flex items-center gap-2"><span style="color:var(--wb-accent-ink)" aria-hidden="true">▸</span> Independent writing task</li>
+                <li class="flex items-center gap-2"><span style="color:var(--wb-accent-ink)" aria-hidden="true">▸</span> Sample taken for home</li>
+              </ul>
+            </div>
+
+            <svg class="wb-float absolute -top-6 -left-4 w-10 h-10 hidden sm:block" viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M24 3.5 27.4 16 40 19.4 27.4 22.8 24 35.5 20.6 22.8 8 19.4 20.6 16z" fill="#F4A261"/>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- marquee-style band -->
+    <div class="relative overflow-hidden wb-paper-purple py-3" aria-hidden="true">
+      <div class="flex gap-10 whitespace-nowrap wb-marquee" style="width:max-content">
+        <span style="font-size:1.5rem;color:var(--wb-cream-200)">Learn the stroke ✦ Practise the letter ✦ Build the word ✦ Finish with pride ✦ </span>
+        <span style="font-size:1.5rem;color:var(--wb-cream-200)">Learn the stroke ✦ Practise the letter ✦ Build the word ✦ Finish with pride ✦ </span>
+        <span style="font-size:1.5rem;color:var(--wb-cream-200)">Learn the stroke ✦ Practise the letter ✦ Build the word ✦ Finish with pride ✦ </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BEFORE / AFTER ================= -->
+  <section id="h2-compare" class="wb-section bg-white scroll-mt-24" aria-labelledby="h2-compare-title">
+    <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-6">
+      <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-end mb-10 wb-reveal">
+        <div class="lg:col-span-7">
+          <p class="mb-2 font-extrabold text-[1.95rem] sm:text-[2.25rem]" style="font-size:1.5rem;color:var(--wb-accent-ink)">Chapter 01</p>
+          <h2 id="h2-compare-title" class="mb-0">Two Sheets, Same Child</h2>
+        </div>
+        <div class="lg:col-span-5">
+          <p class="m-0" style="color:var(--wb-ink-500)">
+            A demo learner's first and most recent sample. Changes of this kind usually take
+            several months of regular practice.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="grid gap-5 sm:grid-cols-3 mt-8 wb-reveal">
+        <div class="wb-card wb-card-cream p-5">
+          <img src="assets\images\img9.avif" alt="Early practice sheet from week one showing letter tracing" width="760" height="510" class="w-full h-auto rounded-xl mb-4" loading="lazy" />
+          <p class="text-[0.72rem] font-bold uppercase tracking-widest text-ink-400 mb-1">Week 1 focus</p>
+          <p class="font-bold m-0" style="color:var(--wb-primary)">Letter formation</p>
+          <p class="text-[0.9rem] m-0" style="color:var(--wb-ink-500)">Shapes of letters introduced with tracing and air-writing.</p>
+        </div>
+        <div class="wb-card wb-card-cream p-5">
+          <img src="assets\images\img10.avif" alt="Neat practice sheet showing even spacing and baseline alignment" width="760" height="510" class="w-full h-auto rounded-xl mb-4" loading="lazy" />
+          <p class="text-[0.72rem] font-bold uppercase tracking-widest text-ink-400 mb-1">Week 6 focus</p>
+          <p class="font-bold m-0" style="color:var(--wb-primary)">Spacing &amp; alignment</p>
+          <p class="text-[0.9rem] m-0" style="color:var(--wb-ink-500)">Word gaps and baseline discipline using ruled guides.</p>
+        </div>
+        <div class="wb-card wb-card-cream p-5">
+          <img src="assets\images\img11.avif" alt="Child practising fluent handwriting in a classroom session" width="760" height="510" class="w-full h-auto rounded-xl mb-4" loading="lazy" />
+          <p class="text-[0.72rem] font-bold uppercase tracking-widest text-ink-400 mb-1">Week 12 focus</p>
+          <p class="font-bold m-0" style="color:var(--wb-primary)">Neatness &amp; speed</p>
+          <p class="text-[0.9rem] m-0" style="color:var(--wb-ink-500)">Fluency practice while keeping letter quality and spacing steady.</p>
+        </div>
+      </div>
+
+      <p class="wb-note mt-6">
+        Demo samples only. Individual progress depends on age, starting level and practice frequency.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= PROGRAM CATEGORIES ================= -->
+  <section id="h2-programs" class="wb-section wb-paper relative overflow-hidden scroll-mt-24" aria-labelledby="h2-prog-title">
+    <div class="relative mx-auto w-full max-w-[1280px] px-5 sm:px-6">
+      <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-5 mb-10 wb-reveal">
+        <div>
+          <p class="mb-2 font-extrabold text-[1.95rem] sm:text-[2.25rem]" style="font-size:1.5rem;color:var(--wb-accent-ink)">Chapter 02</p>
+          <h2 id="h2-prog-title" class="mb-0">Program Categories</h2>
+        </div>
+        <a href="programs.html" class="wb-btn wb-btn-quiet shrink-0 self-start lg:self-auto">Full program details</a>
+      </div>
+
+      <div class="grid gap-5 md:grid-cols-2">
+
+        <article class="wb-card wb-card-hover p-7 wb-reveal" data-delay="1">
+          <div class="flex items-baseline gap-3 mb-3">
+            <span style="font-size:2.4rem;line-height:1;color:var(--wb-accent-ink)">4–6</span>
+            <span class="wb-badge wb-badge-purple">Foundation</span>
+          </div>
+          <h3 class="mb-2" style="font-size:1.35rem">Foundation Writing</h3>
+          <p style="color:var(--wb-ink-500)">
+            Pre-writing and early letter skills through play: grip, posture, strokes and
+            recognition. Sessions are short and rhythm-based.
+          </p>
+          <div class="wb-chips mt-4 mb-5">
+            <span class="wb-chip">Pencil grip</span><span class="wb-chip">Basic strokes</span>
+            <span class="wb-chip">Letter recognition</span><span class="wb-chip">Confidence</span>
+          </div>
+          <div class="flex flex-wrap gap-4 text-[0.86rem] font-semibold" style="color:var(--wb-ink-500)">
+            <span>6 weeks</span><span aria-hidden="true">·</span><span>2 classes / week</span><span aria-hidden="true">·</span><span>₹999 / mo</span>
+          </div>
+          <a href="programs.html#foundation-writing" class="wb-link-arrow mt-4">Explore Foundation Writing
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="wb-card wb-card-hover p-7 wb-reveal" data-delay="2" style="border-color:var(--wb-primary)">
+          <div class="flex items-baseline gap-3 mb-3">
+            <span style="font-size:2.4rem;line-height:1;color:var(--wb-accent-ink)">7–9</span>
+            <span class="wb-badge wb-badge-accent">Core Program</span>
+          </div>
+          <h3 class="mb-2" style="font-size:1.35rem">Handwriting Improvement</h3>
+          <p style="color:var(--wb-ink-500)">
+            The stage where classroom habits form. Clean letter shapes, even spacing, straight
+            baselines and comfortable writing speed.
+          </p>
+          <div class="wb-chips mt-4 mb-5">
+            <span class="wb-chip">Letter formation</span><span class="wb-chip">Spacing</span>
+            <span class="wb-chip">Alignment</span><span class="wb-chip">Writing speed</span>
+          </div>
+          <div class="flex flex-wrap gap-4 text-[0.86rem] font-semibold" style="color:var(--wb-ink-500)">
+            <span>8 weeks</span><span aria-hidden="true">·</span><span>2 classes / week</span><span aria-hidden="true">·</span><span>₹1,799 / mo</span>
+          </div>
+          <a href="programs.html#handwriting-improvement" class="wb-link-arrow mt-4">Explore Handwriting Improvement
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="wb-card wb-card-hover p-7 wb-reveal" data-delay="3">
+          <div class="flex items-baseline gap-3 mb-3">
+            <span style="font-size:2.4rem;line-height:1;color:var(--wb-accent-ink)">10–12</span>
+            <span class="wb-badge wb-badge-purple">Refinement</span>
+          </div>
+          <h3 class="mb-2" style="font-size:1.35rem">Advanced Handwriting</h3>
+          <p style="color:var(--wb-ink-500)">
+            Presentation quality for assignments and exams — tidy pages, consistent size and
+            speed that does not sacrifice accuracy.
+          </p>
+          <div class="wb-chips mt-4 mb-5">
+            <span class="wb-chip">Neatness</span><span class="wb-chip">Consistency</span>
+            <span class="wb-chip">Speed</span><span class="wb-chip">Presentation</span>
+          </div>
+          <div class="flex flex-wrap gap-4 text-[0.86rem] font-semibold" style="color:var(--wb-ink-500)">
+            <span>8 weeks</span><span aria-hidden="true">·</span><span>2 classes / week</span><span aria-hidden="true">·</span><span>₹2,499 / mo</span>
+          </div>
+          <a href="programs.html#advanced-handwriting" class="wb-link-arrow mt-4">Explore Advanced Handwriting
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="wb-card wb-card-hover p-7 wb-reveal" data-delay="4">
+          <div class="flex items-baseline gap-3 mb-3">
+            <span style="font-size:2.4rem;line-height:1;color:var(--wb-accent-ink)">13+</span>
+            <span class="wb-badge wb-badge-accent">Creative</span>
+          </div>
+          <h3 class="mb-2" style="font-size:1.35rem">Calligraphy &amp; Creative Writing</h3>
+          <p style="color:var(--wb-ink-500)">
+            Style, pen control and personal expression — from modern lettering to classic
+            scripts and decorated pages.
+          </p>
+          <div class="wb-chips mt-4 mb-5">
+            <span class="wb-chip">Letter styling</span><span class="wb-chip">Calligraphy</span>
+            <span class="wb-chip">Creative lettering</span><span class="wb-chip">Presentation</span>
+          </div>
+          <div class="flex flex-wrap gap-4 text-[0.86rem] font-semibold" style="color:var(--wb-ink-500)">
+            <span>10 weeks</span><span aria-hidden="true">·</span><span>1 class / week</span><span aria-hidden="true">·</span><span>₹2,499 / mo</span>
+          </div>
+          <a href="programs.html#calligraphy-creative" class="wb-link-arrow mt-4">Explore Calligraphy
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ================= PROGRESS DASHBOARD PREVIEW ================= -->
+  <section id="h2-progress" class="wb-section wb-paper-cream relative overflow-hidden scroll-mt-24" aria-labelledby="h2-prog2-title">
+    <div class="pointer-events-none absolute inset-0 wb-dots opacity-35" aria-hidden="true"></div>
+    <div class="relative mx-auto w-full max-w-[1280px] px-5 sm:px-6">
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+
+        <div class="lg:col-span-7 order-2 lg:order-1 wb-reveal">
+          <div class="wb-card overflow-hidden">
+            <div class="flex flex-wrap items-center gap-3 px-5 sm:px-6 py-4" style="background:var(--wb-primary)">
+              <span class="grid place-items-center w-11 h-11 rounded-xl bg-white/15 shrink-0" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFF1C7" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-6 4 4 4-7 5 5"/></svg>
+              </span>
+              <div class="min-w-0 flex-1">
+                <p class="text-[0.7rem] font-bold uppercase tracking-widest m-0" style="color:var(--wb-cream-200)">Progress · Week 12</p>
+                <p class="text-white font-bold m-0">Vivaan · Age 11 · Advanced Handwriting</p>
+              </div>
+              <span class="wb-badge" style="background:rgba(255,255,255,.18);color:#FFFFFF">84%</span>
+            </div>
+
+            <div class="p-5 sm:p-6">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-1">
+                <div class="wb-metric">
+                  <span class="text-[0.9rem] font-medium">Letter Formation</span>
+                  <span class="flex items-center gap-2 min-w-0"><span class="wb-progress wb-progress-sm" style="display:block;width:70px"><span class="wb-progress-track"><span class="wb-progress-fill" data-value="88" style="display:block"></span></span></span><span class="wb-badge wb-badge-success">88%</span></span>
+                </div>
+                <div class="wb-metric">
+                  <span class="text-[0.9rem] font-medium">Spacing</span>
+                  <span class="flex items-center gap-2 min-w-0"><span class="wb-progress wb-progress-sm" style="display:block;width:70px"><span class="wb-progress-track"><span class="wb-progress-fill" data-value="81" style="display:block"></span></span></span><span class="wb-badge wb-badge-success">81%</span></span>
+                </div>
+                <div class="wb-metric">
+                  <span class="text-[0.9rem] font-medium">Alignment</span>
+                  <span class="flex items-center gap-2 min-w-0"><span class="wb-progress wb-progress-sm" style="display:block;width:70px"><span class="wb-progress-track"><span class="wb-progress-fill" data-value="86" style="display:block"></span></span></span><span class="wb-badge wb-badge-success">86%</span></span>
+                </div>
+                <div class="wb-metric">
+                  <span class="text-[0.9rem] font-medium">Letter Size</span>
+                  <span class="flex items-center gap-2 min-w-0"><span class="wb-progress wb-progress-sm" style="display:block;width:70px"><span class="wb-progress-track"><span class="wb-progress-fill" data-value="78" style="display:block"></span></span></span><span class="wb-badge wb-badge-warning">78%</span></span>
+                </div>
+                <div class="wb-metric">
+                  <span class="text-[0.9rem] font-medium">Writing Speed</span>
+                  <span class="flex items-center gap-2 min-w-0"><span class="wb-progress wb-progress-sm" style="display:block;width:70px"><span class="wb-progress-track"><span class="wb-progress-fill" data-value="74" style="display:block"></span></span></span><span class="wb-badge wb-badge-warning">74%</span></span>
+                </div>
+                <div class="wb-metric">
+                  <span class="text-[0.9rem] font-medium">Neatness</span>
+                  <span class="flex items-center gap-2 min-w-0"><span class="wb-progress wb-progress-sm" style="display:block;width:70px"><span class="wb-progress-track"><span class="wb-progress-fill" data-value="85" style="display:block"></span></span></span><span class="wb-badge wb-badge-success">85%</span></span>
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-3 mt-6">
+                <picture class="contents"><source type="image/avif" srcset="assets/images/sample-vivaan-before.avif" /><source type="image/webp" srcset="assets/images/sample-vivaan-before.webp" /><img src="assets/images/sample-vivaan-before.jpg" alt="Demo handwriting sample showing uneven baseline and variable letter sizes." width="760" height="510" class="w-full h-auto rounded-xl border" style="border-color:rgba(37,37,37,.12)" loading="lazy" /></picture>
+                <picture class="contents"><source type="image/avif" srcset="assets/images/sample-vivaan-after.avif" /><source type="image/webp" srcset="assets/images/sample-vivaan-after.webp" /><img src="assets/images/sample-vivaan-after.jpg" alt="Demo handwriting sample showing a straight baseline and even letter sizes." width="760" height="510" class="w-full h-auto rounded-xl border" style="border-color:rgba(91,75,138,.35)" loading="lazy" /></picture>
+              </div>
+
+              <p class="wb-note mt-5 mb-0">Demo dashboard content for illustration only.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 order-1 lg:order-2 wb-reveal" data-delay="2">
+          <p class="mb-2 font-extrabold text-[1.95rem] sm:text-[2.25rem]" style="font-size:1.5rem;color:var(--wb-accent-ink)">Chapter 03</p>
+          <h2 id="h2-prog2-title" class="mb-4">Numbers Parents Can Read</h2>
+          <p class="wb-lead mb-6">
+            Six skills, scored each month from the child's own sample sheet — plus the sample
+            itself, so you can always see what the score means.
+          </p>
+          <div class="wb-card wb-card-cream p-6 mb-6">
+            <p class="text-[0.72rem] font-bold uppercase tracking-widest text-ink-400 mb-2">Latest instructor feedback</p>
+            <p class="m-0" style="font-size:1.02rem">“Letter spacing has improved. Continue practicing consistent letter height across capitals and lowercase.”</p>
+            <p class="wb-note mt-3 mb-0">— Meera Krishnan · 12 Oct 2026</p>
+          </div>
+          <a href="dashboard/parent-dashboard.html" class="wb-btn wb-btn-primary wb-btn-lg">Open Parent Dashboard</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section id="h2-voices" class="wb-section bg-white scroll-mt-24" aria-labelledby="h2-voices-title">
+    <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-6">
+      <div class="max-w-2xl mb-10 wb-reveal mx-auto text-center">
+        <p class="mb-2 font-extrabold text-[1.95rem] sm:text-[2.25rem]" style="font-size:1.5rem;color:var(--wb-accent-ink)">Chapter 04</p>
+        <h2 id="h2-voices-title" class="mb-3">Parent Voices</h2>
+        <p class="wb-lead mb-0">Short notes from families currently practising at home.</p>
+      </div>
+
+      <div class="grid gap-5 md:grid-cols-3">
+        <blockquote class="wb-card wb-card-paper p-6 m-0 wb-reveal" data-delay="1">
+          <p class="mb-4" style="font-size:1.3rem;color:var(--wb-primary);line-height:1.25">“It became a calm ten-minute habit instead of a battle.”</p>
+          <footer class="text-[0.9rem] m-0 flex items-center gap-3"><img src="assets/images/m1.avif" alt="Sunita R." width="44" height="44" class="w-11 h-11 rounded-full object-cover shrink-0" loading="lazy" /><span><strong>Sunita R.</strong> <span style="color:var(--wb-ink-500)">· Parent of a 7-year-old</span></span></footer>
+        </blockquote>
+        <blockquote class="wb-card wb-card-paper p-6 m-0 wb-reveal" data-delay="2">
+          <p class="mb-4" style="font-size:1.3rem;color:var(--wb-primary);line-height:1.25">“The weekly sheet tells me exactly what to ask her to redo.”</p>
+          <footer class="text-[0.9rem] m-0 flex items-center gap-3"><img src="assets/images/m2.avif" alt="Arun M." width="44" height="44" class="w-11 h-11 rounded-full object-cover shrink-0" loading="lazy" /><span><strong>Arun M.</strong> <span style="color:var(--wb-ink-500)">· Parent of a 9-year-old</span></span></footer>
+        </blockquote>
+        <blockquote class="wb-card wb-card-paper p-6 m-0 wb-reveal" data-delay="3">
+          <p class="mb-4" style="font-size:1.3rem;color:var(--wb-primary);line-height:1.25">“My daughter decorated her own birthday invite. She writes now.”</p>
+          <footer class="text-[0.9rem] m-0 flex items-center gap-3"><img src="assets/images/g1.avif" alt="Nisha K." width="44" height="44" class="w-11 h-11 rounded-full object-cover shrink-0" loading="lazy" /><span><strong>Nisha K.</strong> <span style="color:var(--wb-ink-500)">· Parent of a 12-year-old</span></span></footer>
+        </blockquote>
+      </div>
+
+      <p class="wb-note mt-6 text-center">Parent voices shown are illustrative demo content.</p>
+    </div>
+  </section>
+
+  <!-- ================= PRICING + FAQ ================= -->
+  <section id="h2-pricing" class="wb-section wb-paper-cream relative overflow-hidden scroll-mt-24" aria-labelledby="h2-price-title">
+    <div class="pointer-events-none absolute inset-0 wb-dots opacity-30" aria-hidden="true"></div>
+    <div class="relative mx-auto w-full max-w-[1280px] px-5 sm:px-6">
+
+
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-14">
+        <div class="lg:col-span-4 wb-reveal">
+          <h3 class="mb-3" style="font-size:1.6rem">Quick Questions</h3>
+          <p style="color:var(--wb-ink-500)">
+            Short answers to what we are asked most. Longer explanations live on the pricing page
+            and in our FAQs.
+          </p><br>
+          <a href="pricing.html" class="wb-btn wb-btn-primary">See all details</a>
+        </div>
+        <div class="lg:col-span-8 wb-reveal" data-delay="2" data-accordion-single="true">
+          <div class="wb-accordion">
+            <h3 class="m-0"><button type="button" class="wb-accordion-trigger" id="h2-f1" aria-expanded="true" aria-controls="h2-fp1"><span>Do I need to buy any materials?</span><span class="wb-accordion-icon" aria-hidden="true"></span></button></h3>
+            <div class="wb-accordion-panel is-open" id="h2-fp1" role="region" aria-labelledby="h2-f1"><div><p class="px-5 sm:px-6 pb-5 m-0" style="color:var(--wb-ink-500)">Practice sheets are provided as part of every plan. Children only need a pencil, an eraser and a lined notebook, which most families already have at home.</p></div></div>
+          </div>
+          <div class="wb-accordion">
+            <h3 class="m-0"><button type="button" class="wb-accordion-trigger" id="h2-f2" aria-expanded="false" aria-controls="h2-fp2"><span>Can my child try a class first?</span><span class="wb-accordion-icon" aria-hidden="true"></span></button></h3>
+            <div class="wb-accordion-panel" id="h2-fp2" role="region" aria-labelledby="h2-f2" hidden><div><p class="px-5 sm:px-6 pb-5 m-0" style="color:var(--wb-ink-500)">Yes. We arrange a short assessment session so you and the instructor can agree on the right program before you enrol.</p></div></div>
+          </div>
+          <div class="wb-accordion">
+            <h3 class="m-0"><button type="button" class="wb-accordion-trigger" id="h2-f3" aria-expanded="false" aria-controls="h2-fp3"><span>What if we need to pause classes?</span><span class="wb-accordion-icon" aria-hidden="true"></span></button></h3>
+            <div class="wb-accordion-panel" id="h2-fp3" role="region" aria-labelledby="h2-f3" hidden><div><p class="px-5 sm:px-6 pb-5 m-0" style="color:var(--wb-ink-500)">Plans are monthly, so you can pause or change plan with one week's notice. Sample history stays in your dashboard.</p></div></div>
+          </div>
+          <div class="wb-accordion">
+            <h3 class="m-0"><button type="button" class="wb-accordion-trigger" id="h2-f4" aria-expanded="false" aria-controls="h2-fp4"><span>Is handwriting improvement guaranteed?</span><span class="wb-accordion-icon" aria-hidden="true"></span></button></h3>
+            <div class="wb-accordion-panel" id="h2-fp4" role="region" aria-labelledby="h2-f4" hidden><div><p class="px-5 sm:px-6 pb-5 m-0" style="color:var(--wb-ink-500)">No. Our programs are designed to support handwriting development through structured practice and feedback. Progress depends on each child's age, starting level and practice routine.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="relative wb-paper-purple overflow-hidden" aria-labelledby="h2-cta-title">
+    <div class="pointer-events-none absolute inset-0 wb-dots-cream opacity-50" aria-hidden="true"></div>
+    <div class="relative mx-auto w-full max-w-[1280px] px-5 sm:px-6 py-16 lg:py-20">
+      <div class="grid lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-8 wb-reveal">
+          <h2 id="h2-cta-title" class="text-white mb-3">Ten Minutes a Day Is Enough to Begin</h2>
+          <p class="mb-0 text-white" style="font-size:1.08rem;color:rgba(255,255,255,.85)">
+            Tell us your child's age and we will recommend a program and a batch that fits your week.
+          </p>
+        </div>
+        <div class="lg:col-span-4 wb-reveal" data-delay="2">
+          <div class="flex flex-col sm:flex-row lg:flex-col gap-3">
+            <a href="contact.html?intent=enroll" class="wb-btn wb-btn-accent wb-btn-lg grow">Enroll Now</a>
+            <a href="programs.html" class="wb-btn wb-btn-ghost wb-btn-lg grow">Explore Programs</a>
+          </div>
+        </div>
+      </div>
+      <div class=" mt-10 mx-auto" aria-hidden="true"></div>
+      <p class="text-center mt-6 mb-0" style="font-size:1.6rem;color:var(--wb-cream-200)">Beautiful Writing Starts With Practice.</p>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer"></div>
+
+<script src="js/navbar.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

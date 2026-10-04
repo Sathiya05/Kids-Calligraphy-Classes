@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Parent Dashboard | WriteBright</title>
+<meta name="description" content="WriteBright parent dashboard — view your child's handwriting progress, class schedule, uploaded samples, enrolments and payments in one place." />
+<meta name="keywords" content="parent dashboard, handwriting progress tracker, student schedule" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="theme-color" content="#5B4B8A" />
+<link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/style.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: { DEFAULT: "#5B4B8A", 50: "#F6F4FB", 100: "#ECE9F5", 200: "#DCD5EC", 300: "#8F83B8", 400: "#7A68AD", 500: "#5B4B8A", 600: "#4C3E74", 700: "#3F3460", 800: "#332A4D", 900: "#241E36" },
+          cream: { DEFAULT: "#FFF1C7", 50: "#FFFAF0", 100: "#FFF7E3", 200: "#FFE6A3", 300: "#F7D97E" },
+          ink: { DEFAULT: "#252525", 300: "#A5A5A5", 400: "#7C7C7C", 500: "#5F5F5F", 600: "#4A4A4A", 700: "#3B3B3B", 800: "#2E2E2E" },
+          accent: { DEFAULT: "#F4A261", 100: "#FDECDC", 200: "#FBD5B4", 600: "#E2894A", 700: "#C4703A" }
+        },
+        fontFamily: {
+          sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+          hand: ['Caveat', 'Segoe Script', 'Bradley Hand', 'cursive']
+        },
+        boxShadow: {
+          wb: '0 10px 30px -12px rgba(91,75,138,.22), 0 2px 6px rgba(37,37,37,.04)',
+          'wb-lg': '0 24px 60px -20px rgba(91,75,138,.3), 0 4px 12px rgba(37,37,37,.05)'
+        }
+      }
+    }
+  };
+</script>
+</head>
+
+<body class="bg-white text-ink antialiased wb-no-scroll-x">
+
+<main id="main" class="wb-dash">
+
+  <!-- ===================== SIDEBAR ===================== -->
+  <aside class="wb-dash-sidebar wb-scroll-thin" id="dashSidebar" aria-label="Parent dashboard sections">
+    <div class="px-5 pt-5 pb-4 flex items-center gap-2">
+      <a href="../index.html" class="flex items-center gap-2.5 shrink-0 flex-1 min-w-0" aria-label="WriteBright home">
+        <svg viewBox="0 0 44 44" width="40" height="40" aria-hidden="true" focusable="false" class="shrink-0"><defs><linearGradient id="wbPencilBody" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#7A68AD"/><stop offset="100%" stop-color="#5B4B8A"/></linearGradient><linearGradient id="wbTipGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#F4A261"/><stop offset="100%" stop-color="#E2894A"/></linearGradient></defs><rect x="1.5" y="1.5" width="41" height="41" rx="13" fill="#FFF1C7"/><rect x="1.5" y="1.5" width="41" height="41" rx="13" fill="none" stroke="#F4A261" stroke-width="1.6" opacity=".55"/><path d="M10 16.5c1.6 8.4 3 12.6 4.2 12.6 1.4 0 2.2-3.6 3.1-7.6.7-3.2 1.3-5.6 2.4-5.6 1.1 0 1.8 2.5 2.6 5.9.8 3.6 1.5 7.3 2.6 7.3 1.1 0 1.7-2.4 2.4-5.3.6-2.6 1.1-5.4 2.1-5.4.9 0 1.4 2 2 5" fill="none" stroke="url(#wbPencilBody)" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"/><path d="M33.6 9.6 38.8 8.2l-1.4 5.2-4.4 4.4-3.8-3.8z" fill="url(#wbTipGrad)"/><path d="M33.6 9.6 35.2 14l3.6-3.6z" fill="#FFF1C7"/><path d="m29.2 14 3.8 3.8-1.5 1.5z" fill="#3f3460" opacity=".5"/><path d="M37.6 7.1l.62 1.72 1.72.62-1.72.62-.62 1.72-.62-1.72-1.72-.62 1.72-.62z" fill="#F4A261"/></svg>
+        <span class="leading-none">
+          <span class="block text-[1.32rem] font-extrabold tracking-tight" style="color:var(--wb-primary)">Write<span style="color:var(--wb-accent-ink)">Bright</span></span>
+        </span>
+      </a>
+      <button type="button" class="wb-icon-btn lg:hidden shrink-0" id="dashClose" aria-label="Close dashboard menu" style="width:38px;height:38px">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <div class="px-5 pb-4 lg:hidden">
+      <div class="flex gap-2">
+        <button type="button" class="wb-btn wb-btn-quiet wb-btn-sm flex-1" data-dash-theme aria-pressed="false">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          Theme
+        </button>
+        <button type="button" class="wb-btn wb-btn-quiet wb-btn-sm flex-1" data-dash-rtl aria-pressed="false">RTL</button>
+      </div>
+    </div>
+
+    <nav class="px-3 pb-3" aria-label="Dashboard">
+      <ul class="list-none m-0 p-0 flex flex-col gap-1" id="dashNav"></ul>
+    </nav>
+
+    <div class="mt-auto px-5 py-5">
+      <div class="rounded-2xl p-4" style="background:var(--wb-white);border:1px solid rgba(37,37,37,.1)">
+        <p class="text-[0.72rem] font-bold uppercase tracking-widest mb-1" style="color:var(--wb-primary)">Demo account</p>
+        <p class="m-0 mb-3" style="font-size:.86rem;color:var(--wb-ink-500)">All records on this page are sample data for demonstration.</p>
+        <a href="../index.html" class="wb-btn wb-btn-sm wb-btn-block" style="background:var(--wb-primary);color:#fff">Back to Website</a>
+      </div>
+    </div>
+  </aside>
+
+  <div class="wb-scrim wb-dash-scrim" id="dashScrim" aria-hidden="true"></div>
+
+  <!-- ===================== MAIN ===================== -->
+  <div class="wb-dash-main">
+
+    <header class="wb-dash-topbar">
+      <div class="min-w-0">
+        <h1 class="m-0 truncate" id="dashTitle" style="font-size:1.15rem">Overview</h1>
+        <p class="m-0 truncate text-[0.8rem]" style="color:var(--wb-ink-400)" id="dashSubtitle">Welcome back, Priya</p>
+      </div>
+
+      <div class="ml-auto flex items-center gap-2 sm:gap-3">
+        <div class="hidden sm:block">
+          <label class="wb-sr" for="childSwitch">Viewing progress for</label>
+          <select class="wb-select" id="childSwitch" style="padding:.5rem 2.2rem .5rem .85rem;font-size:.88rem"></select>
+        </div>
+
+        <button type="button" class="wb-icon-btn hidden lg:inline-flex" id="dashTheme" data-dash-theme title="Toggle dark theme" aria-label="Toggle dark theme" aria-pressed="false">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <button type="button" class="wb-icon-btn hidden lg:inline-flex" id="dashRtl" data-dash-rtl title="Toggle right-to-left layout" aria-label="Toggle right-to-left layout" aria-pressed="false" style="font-size:.78rem;font-weight:800">RTL</button>
+
+        <button type="button" class="wb-icon-btn relative" id="dashBell" aria-label="Notifications, 2 unread">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 8-3 8h18s-3-1-3-8"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+          <span class="wb-dot" aria-hidden="true"></span>
+        </button>
+
+        <div class="flex items-center gap-2.5 pl-2 sm:pl-3" style="border-left:1px solid rgba(37,37,37,.1)">
+          <span class="wb-avatar" id="dashAvatar" aria-hidden="true">PS</span>
+          <span class="hidden lg:block min-w-0">
+            <span class="block font-bold text-[0.88rem] truncate" id="dashUser">Priya Sharma</span>
+            <span class="block text-[0.74rem]" style="color:var(--wb-ink-400)">Parent</span>
+          </span>
+        </div>
+
+        <button type="button" class="wb-icon-btn wb-dash-toggle" id="dashToggle" aria-label="Open dashboard menu" aria-expanded="false" aria-controls="dashSidebar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="wb-dash-content">
+      <div class="sm:hidden mb-4">
+        <label class="wb-label wb-sr" for="childSwitchMobile">Viewing progress for</label>
+        <select class="wb-select" id="childSwitchMobile"></select>
+      </div>
+
+      <div id="dashNotice" class="wb-card wb-card-cream p-4 mb-5 flex items-start gap-3">
+        <span class="grid place-items-center w-9 h-9 rounded-xl shrink-0" style="background:rgba(255,255,255,.7);color:var(--wb-primary)" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+        </span>
+        <p class="m-0 text-[0.88rem]" style="color:var(--wb-ink-500)">
+          <strong style="color:var(--wb-primary)">Demonstration dashboard.</strong>
+          Nothing here is stored permanently, no payments are processed and all children, scores and
+          invoices are sample records.
+        </p>
+      </div>
+
+      <!-- sections injected by js/parent-dashboard.js -->
+      <div id="dashPanels"></div>
+    </div>
+  </div>
+</main>
+
+<script src="../js/main.js"></script>
+<script src="../js/parent-dashboard.js"></script>
+<script>
+(function () {
+  window.WriteBrightNav = {
+    base: "../",
+    pages: {
+      home1: "../index.html", home2: "../home2.html", programs: "../programs.html",
+      instructors: "../instructors.html", pricing: "../pricing.html", about: "../about.html",
+      login: "../login.html", contact: "../contact.html",
+      parentDash: "parent-dashboard.html", adminDash: "admin-dashboard.html"
+    }
+  };
+  function onReady(fn) {
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", fn);
+    else fn();
+  }
+  onReady(function () {
+    var themeBtns = Array.prototype.slice.call(document.querySelectorAll("[data-dash-theme]"));
+    themeBtns.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var on = document.body.classList.toggle("dark-theme");
+        themeBtns.forEach(function (b) { b.setAttribute("aria-pressed", on ? "true" : "false"); });
+      });
+    });
+    var rtlBtns = Array.prototype.slice.call(document.querySelectorAll("[data-dash-rtl]"));
+    rtlBtns.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var doc = document.documentElement;
+        var on = doc.dir !== "rtl";
+        doc.dir = on ? "rtl" : "ltr";
+        rtlBtns.forEach(function (b) { b.setAttribute("aria-pressed", on ? "true" : "false"); });
+      });
+    });
+    var closeBtn = document.getElementById("dashClose");
+    if (closeBtn) closeBtn.addEventListener("click", function () {
+      var sb = document.getElementById("dashSidebar");
+      if (sb) sb.classList.remove("is-open");
+      var scrim = document.getElementById("dashScrim");
+      if (scrim) scrim.classList.remove("is-open");
+      var tg = document.getElementById("dashToggle");
+      if (tg) tg.setAttribute("aria-expanded", "false");
+      document.body.classList.remove("is-locked");
+    });
+  });
+})();
+</script>
+</body>
+</html>

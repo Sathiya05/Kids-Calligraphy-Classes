@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Parent Login | WriteBright</title>
+<meta name="description" content="Sign in to the WriteBright parent dashboard to view your child's class schedule, handwriting progress, sample uploads and payments." />
+<meta name="keywords" content="parent login, student dashboard, handwriting progress login" />
+<meta name="robots" content="noindex, follow" />
+<meta name="theme-color" content="#5B4B8A" />
+<link rel="canonical" href="https://www.writebright.example/login.html" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Parent Login | WriteBright" />
+<meta property="og:description" content="Access your child's handwriting progress, schedule and samples." />
+<meta property="og:url" content="https://www.writebright.example/login.html" />
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: { DEFAULT: "#5B4B8A", 50: "#F6F4FB", 100: "#ECE9F5", 200: "#DCD5EC", 300: "#8F83B8", 400: "#7A68AD", 500: "#5B4B8A", 600: "#4C3E74", 700: "#3F3460", 800: "#332A4D", 900: "#241E36" },
+          cream: { DEFAULT: "#FFF1C7", 50: "#FFFAF0", 100: "#FFF7E3", 200: "#FFE6A3", 300: "#F7D97E" },
+          ink: { DEFAULT: "#252525", 300: "#A5A5A5", 400: "#7C7C7C", 500: "#5F5F5F", 600: "#4A4A4A", 700: "#3B3B3B", 800: "#2E2E2E" },
+          accent: { DEFAULT: "#F4A261", 100: "#FDECDC", 200: "#FBD5B4", 600: "#E2894A", 700: "#C4703A" }
+        },
+        fontFamily: {
+          sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+          hand: ['Caveat', 'Segoe Script', 'Bradley Hand', 'cursive']
+        },
+        boxShadow: {
+          wb: '0 10px 30px -12px rgba(91,75,138,.22), 0 2px 6px rgba(37,37,37,.04)',
+          'wb-lg': '0 24px 60px -20px rgba(91,75,138,.3), 0 4px 12px rgba(37,37,37,.05)'
+        }
+      }
+    }
+  };
+</script>
+</head>
+
+<body class="bg-white text-ink antialiased">
+
+<div class="fixed top-4 right-4 z-40 flex gap-2">
+  <button type="button" id="pageTheme" class="wb-btn wb-btn-quiet wb-btn-sm shadow" title="Toggle dark theme" aria-label="Toggle dark theme" aria-pressed="false" style="padding:.5rem .65rem">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+  </button>
+  <button type="button" id="pageRtl" class="wb-btn wb-btn-quiet wb-btn-sm shadow" title="Toggle right-to-left layout" aria-label="Toggle right-to-left layout" aria-pressed="false" style="padding:.5rem .65rem;font-weight:800">RTL</button>
+</div>
+
+<main id="main">
+  <section class="relative overflow-hidden wb-paper-cream min-h-[calc(100vh-var(--wb-nav-h))] flex items-center py-12 sm:py-16" aria-labelledby="login-title">
+    <div class="pointer-events-none absolute inset-0 wb-dots opacity-40" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute -top-24 -left-20 w-[380px] h-[380px] rounded-full" style="background:radial-gradient(circle,rgba(91,75,138,.14),transparent 70%)" aria-hidden="true"></div>
+
+    <div class="relative mx-auto w-full max-w-[1180px] px-5 sm:px-6">
+      <div class="grid lg:grid-cols-12 gap-8 lg:gap-14 items-center">
+
+        <!-- side panel -->
+        <div class="lg:col-span-5 wb-reveal hidden lg:block">
+          <p class="wb-eyebrow mb-3"><span aria-hidden="true">✎</span> Parent Access</p>
+          <h1 id="login-title" class="mb-4 font-extrabold text-[1.95rem] sm:text-[2.25rem]">Parent <span >Login</span></h1>
+          <p class="wb-lead mb-7">
+            Sign in to see your child's handwriting progress, class schedule, uploaded samples and
+            payment history in one place.
+          </p>
+
+          <ul class="list-none m-0 p-0 flex flex-col gap-3 mb-8">
+            <li class="flex items-start gap-3">
+              <span class="grid place-items-center w-6 h-6 rounded-full bg-primary text-white mt-0.5 shrink-0" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span class="text-[0.96rem]">Six handwriting skill scores, updated fortnightly</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="grid place-items-center w-6 h-6 rounded-full bg-primary text-white mt-0.5 shrink-0" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span class="text-[0.96rem]">Before and after handwriting samples side by side</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="grid place-items-center w-6 h-6 rounded-full bg-primary text-white mt-0.5 shrink-0" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span class="text-[0.96rem]">Instructor notes and weekly home practice</span>
+            </li>
+          </ul>
+
+          <div class="wb-card p-5 ">
+            <p class="text-[0.72rem] font-bold uppercase tracking-widest mb-2" style="color:var(--wb-primary)">Demo access</p>
+            <p class="text-[0.92rem] mb-4" style="color:var(--wb-ink-500)">
+              No real authentication is implemented. Jump straight into either dashboard to explore
+              the interface.
+            </p>
+            <div class="flex flex-col gap-2.5">
+              <a href="dashboard/parent-dashboard.html" class="wb-btn wb-btn-primary wb-btn-sm wb-btn-block">Demo Parent Dashboard</a>
+              <a href="dashboard/admin-dashboard.html" class="wb-btn wb-btn-outline wb-btn-sm wb-btn-block">Demo Admin Dashboard</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- login card -->
+        <div class="lg:col-span-7 wb-reveal mt-10 lg:mt-0" data-delay="2">
+          <div class="wb-card wb-card-paper p-6 sm:p-9">
+            <a href="index.html" class="flex items-center justify-center gap-2.5 mb-5" aria-label="WriteBright home">
+              <svg viewBox="0 0 44 44" width="44" height="44" aria-hidden="true" focusable="false" class="shrink-0"><defs><linearGradient id="wbPencilBody" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#7A68AD"/><stop offset="100%" stop-color="#5B4B8A"/></linearGradient><linearGradient id="wbTipGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#F4A261"/><stop offset="100%" stop-color="#E2894A"/></linearGradient></defs><rect x="1.5" y="1.5" width="41" height="41" rx="13" fill="#FFF1C7"/><rect x="1.5" y="1.5" width="41" height="41" rx="13" fill="none" stroke="#F4A261" stroke-width="1.6" opacity=".55"/><path d="M10 16.5c1.6 8.4 3 12.6 4.2 12.6 1.4 0 2.2-3.6 3.1-7.6.7-3.2 1.3-5.6 2.4-5.6 1.1 0 1.8 2.5 2.6 5.9.8 3.6 1.5 7.3 2.6 7.3 1.1 0 1.7-2.4 2.4-5.3.6-2.6 1.1-5.4 2.1-5.4.9 0 1.4 2 2 5" fill="none" stroke="url(#wbPencilBody)" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"/><path d="M33.6 9.6 38.8 8.2l-1.4 5.2-4.4 4.4-3.8-3.8z" fill="url(#wbTipGrad)"/><path d="M33.6 9.6 35.2 14l3.6-3.6z" fill="#FFF1C7"/><path d="m29.2 14 3.8 3.8-1.5 1.5z" fill="#3f3460" opacity=".5"/><path d="M37.6 7.1l.62 1.72 1.72.62-1.72.62-.62 1.72-.62-1.72-1.72-.62 1.72-.62z" fill="#F4A261"/></svg>
+              <span class="block text-[1.35rem] font-extrabold tracking-tight leading-none" style="color:var(--wb-primary)">Write<span style="color:var(--wb-accent-ink)">Bright</span></span>
+            </a>
+            <h2 class="mb-1 text-center" style="font-size:1.7rem">Welcome Back</h2>
+            <p class="mb-7 text-center" style="color:var(--wb-ink-500)">Use the email address registered with your child's enrolment.</p>
+
+            <form id="loginForm" novalidate>
+              <div class="wb-field mb-4">
+                <label class="wb-label" for="loginEmail">Email <span class="wb-req" aria-hidden="true">*</span></label>
+                <input class="wb-input" type="email" id="loginEmail" name="email" autocomplete="email"
+                       placeholder="priya@example.com" value="parent@example.com"
+                       data-rules="required|email" required aria-describedby="loginEmailError" />
+                <p class="wb-field-error" id="loginEmailError"></p>
+              </div>
+
+              <div class="wb-field mb-4">
+                <div class="flex items-center justify-between gap-3">
+                  <label class="wb-label" for="loginPassword">Password <span class="wb-req" aria-hidden="true">*</span></label>
+                </div>
+                <div class="relative">
+                  <input class="wb-input" type="password" id="loginPassword" name="password"
+                         autocomplete="current-password" placeholder="Enter your password"
+                         value="writebright" data-rules="required|minlen:6" required
+                         aria-describedby="loginPasswordError" style="padding-right:3.4rem" />
+                  <button type="button" class="absolute top-1/2 -translate-y-1/2 right-2 wb-icon-btn" id="togglePw"
+                          style="width:38px;height:38px;border:0;background:var(--wb-primary-50)" aria-label="Show password" aria-pressed="false">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+                  </button>
+                </div>
+                <p class="wb-field-error" id="loginPasswordError"></p>
+              </div>
+
+              <div class="flex flex-col sm:flex-row sm:items-center gap-4 mb-6">
+                <label class="wb-check" for="remember">
+                  <input type="checkbox" id="remember" name="remember" checked />
+                  <span>Remember Me</span>
+                </label>
+                  <button type="button" class="wb-link-arrow text-[0.84rem] sm:ml-auto" id="forgotBtn">Forgot Password?</button>
+              </div>
+
+              <button type="submit" class="wb-btn wb-btn-primary wb-btn-lg wb-btn-block">Login</button>
+            </form>
+
+            <div class="flex items-center gap-4 my-7" aria-hidden="true">
+              <span class="h-px flex-1" style="background:rgba(37,37,37,.15)"></span>
+              <span class="text-[0.78rem] font-bold uppercase tracking-widest" style="color:var(--wb-ink-400)">New here?</span>
+              <span class="h-px flex-1" style="background:rgba(37,37,37,.15)"></span>
+            </div>
+
+
+            <p class="wb-note mt-6 mb-0">
+              This is a front-end demonstration. No credentials are transmitted, stored or verified,
+              and no personal data is collected by this page.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="js/main.js"></script>
+<script>
+/* Login page behaviour (demo only). */
+(function () {
+  var form = document.getElementById("loginForm");
+  var toggle = document.getElementById("togglePw");
+  var pw = document.getElementById("loginPassword");
+  var forgot = document.getElementById("forgotBtn");
+
+  if (toggle && pw) {
+    toggle.addEventListener("click", function () {
+      var show = pw.type === "password";
+      pw.type = show ? "text" : "password";
+      toggle.setAttribute("aria-pressed", show ? "true" : "false");
+      toggle.setAttribute("aria-label", show ? "Hide password" : "Show password");
+    });
+  }
+
+  if (forgot && window.WB) {
+    forgot.addEventListener("click", function () {
+      window.WB.modal({
+        title: "Forgot Password",
+        subtitle: "A demo reset link would normally be emailed here.",
+        body:
+          '<div class="wb-field mb-4">' +
+          '<label class="wb-label" for="resetEmail">Account email</label>' +
+          '<input class="wb-input" type="email" id="resetEmail" placeholder="you@example.com" data-modal-autofocus />' +
+          "</div>" +
+          '<p class="wb-note mb-0">No email is sent from this demonstration site.</p>',
+        footer:
+          '<button type="button" class="wb-btn wb-btn-quiet" data-modal-close>Cancel</button>' +
+          '<button type="button" class="wb-btn wb-btn-primary" data-reset-send>Send Reset Link</button>'
+      });
+      var send = document.querySelector("[data-reset-send]");
+      if (send) {
+        send.addEventListener("click", function () {
+          var input = document.getElementById("resetEmail");
+          if (!input.value || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(input.value)) {
+            window.WB.toast("Please enter a valid email address.", "error");
+            input.focus();
+            return;
+          }
+          document.querySelector("[data-modal-close]").click();
+          window.WB.toast("Demo only — no reset email was sent.", "info");
+        });
+      }
+    });
+  }
+
+  if (form && window.WB) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (!window.WB.validateForm(form)) {
+        window.WB.toast("Please check your email and password.", "error");
+        return;
+      }
+      window.WB.toast("Demo login accepted. Opening the Parent Dashboard…", "success");
+      setTimeout(function () {
+        window.location.href = "dashboard/parent-dashboard.html";
+      }, 900);
+    });
+  }
+
+  /* Floating page toggles (no site navbar on this page). */
+  var pageTheme = document.getElementById("pageTheme");
+  if (pageTheme) {
+    pageTheme.addEventListener("click", function () {
+      var on = document.body.classList.toggle("dark-theme");
+      pageTheme.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+  }
+  var pageRtl = document.getElementById("pageRtl");
+  if (pageRtl) {
+    pageRtl.addEventListener("click", function () {
+      var doc = document.documentElement;
+      var on = doc.dir !== "rtl";
+      doc.dir = on ? "rtl" : "ltr";
+      pageRtl.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+  }
+})();
+</script>
+</body>
+</html>

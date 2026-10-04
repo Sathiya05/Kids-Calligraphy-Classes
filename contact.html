@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact &amp; Enrolment Enquiry | WriteBright</title>
+<meta name="description" content="Talk to WriteBright about handwriting and calligraphy classes for your child. Send an enrolment enquiry, request an assessment, or find our phone, email and class hours." />
+<meta name="keywords" content="contact handwriting classes, enrolment enquiry, kids handwriting class enquiry form" />
+<meta name="theme-color" content="#5B4B8A" />
+<link rel="canonical" href="https://www.writebright.example/contact.html" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Contact &amp; Enrolment Enquiry | WriteBright" />
+<meta property="og:description" content="Send an enquiry and our team replies within one working day." />
+<meta property="og:url" content="https://www.writebright.example/contact.html" />
+<meta property="og:image" content="assets/images/og-cover.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: { DEFAULT: "#5B4B8A", 50: "#F6F4FB", 100: "#ECE9F5", 200: "#DCD5EC", 300: "#8F83B8", 400: "#7A68AD", 500: "#5B4B8A", 600: "#4C3E74", 700: "#3F3460", 800: "#332A4D", 900: "#241E36" },
+          cream: { DEFAULT: "#FFF1C7", 50: "#FFFAF0", 100: "#FFF7E3", 200: "#FFE6A3", 300: "#F7D97E" },
+          ink: { DEFAULT: "#252525", 300: "#A5A5A5", 400: "#7C7C7C", 500: "#5F5F5F", 600: "#4A4A4A", 700: "#3B3B3B", 800: "#2E2E2E" },
+          accent: { DEFAULT: "#F4A261", 100: "#FDECDC", 200: "#FBD5B4", 600: "#E2894A", 700: "#C4703A" }
+        },
+        fontFamily: {
+          sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+          hand: ['Caveat', 'Segoe Script', 'Bradley Hand', 'cursive']
+        },
+        boxShadow: {
+          wb: '0 10px 30px -12px rgba(91,75,138,.22), 0 2px 6px rgba(37,37,37,.04)',
+          'wb-lg': '0 24px 60px -20px rgba(91,75,138,.3), 0 4px 12px rgba(37,37,37,.05)'
+        }
+      }
+    }
+  };
+</script>
+</head>
+
+<body class="bg-white text-ink antialiased">
+<div id="navbar"></div>
+
+<main id="main">
+
+  <!-- ================= PAGE HERO ================= -->
+  <section class="relative overflow-hidden wb-paper-cream min-h-screen flex flex-col" aria-labelledby="contact-title">
+    <div class="pointer-events-none absolute inset-0 wb-dots opacity-40" aria-hidden="true"></div>
+
+    <div class="relative mx-auto w-full max-w-[1280px] px-5 sm:px-6 pt-12 pb-10 sm:pt-16 lg:pt-20 lg:pb-14 flex-1 flex items-center">
+      <div class="grid lg:grid-cols-2 gap-10 items-center w-full">
+      <div class="max-w-3xl wb-reveal">
+        <nav aria-label="Breadcrumb" class="mb-4">
+          <ol class="list-none m-0 p-0 flex flex-wrap items-center gap-2 text-[0.85rem] font-semibold" style="color:var(--wb-ink-500)">
+            <li><a class="wb-tap" href="index.html">Home</a></li>
+            <li aria-hidden="true">/</li>
+            <li aria-current="page" style="color:var(--wb-primary)">Contact</li>
+          </ol>
+        </nav>
+        <p class="wb-eyebrow mb-3"><span aria-hidden="true">✎</span> Get in Touch</p>
+        <h1 id="contact-title" class="mb-4 font-extrabold text-[1.95rem] sm:text-[2.25rem]">Have <span >Questions?</span></h1>
+        <p class="wb-lead mb-0">
+          Tell us your child's age and what you would like to work on. Our team replies within one
+          working day with a suggested program and available batch times.
+        </p>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href="#contactForm" class="wb-btn wb-btn-primary">Send an Enquiry</a>
+          <a href="tel:+919876543210" class="wb-btn wb-btn-outline">Call +91 98765 43210</a>
+        </div>
+        <ul class="list-none m-0 p-0 mt-7 flex flex-col sm:flex-row flex-wrap gap-x-8 gap-y-3 text-[0.9rem] font-semibold" style="color:var(--wb-ink-600)">
+          <li class="flex items-center gap-2">
+            <span class="grid place-items-center w-8 h-8 rounded-full shrink-0" style="background:var(--wb-primary-100);color:var(--wb-primary)" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8.1 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.9 2z"/></svg>
+            </span>
+            Mon–Sat, 9:00 AM – 8:00 PM
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="grid place-items-center w-8 h-8 rounded-full shrink-0" style="background:var(--wb-primary-100);color:var(--wb-primary)" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m2 7 10 6L22 7"/></svg>
+            </span>
+            hello@writebright.example
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="grid place-items-center w-8 h-8 rounded-full shrink-0" style="background:var(--wb-primary-100);color:var(--wb-primary)" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </span>
+            Replies within one working day
+          </li>
+        </ul>
+      </div>
+      <div class="wb-reveal" data-delay="2">
+        <img src="assets\images\img6.avif" alt="Children practising handwriting together in a WriteBright classroom" width="760" height="710" class="w-full h-auto max-w-md mx-auto rounded-[2rem] shadow-lg" />
+      </div>
+      </div>
+    </div>
+    <div class="relative h-7 bg-white wb-torn-bottom" aria-hidden="true"></div>
+  </section>
+
+  <!-- ================= FORM + INFO ================= -->
+  <section class="wb-section bg-white pt-10 sm:pt-14" aria-labelledby="form-title">
+    <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-6">
+      <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+
+        <!-- form -->
+        <div class="lg:col-span-7 wb-reveal">
+          <div class="wb-card wb-card-paper p-6 sm:p-8">
+            <div id="enrollBanner" class="wb-card wb-card-cream p-4 mb-6 hidden">
+              <p class="font-bold m-0" style="font-size:1rem;color:var(--wb-primary)">Enrolment enquiry</p>
+              <p class="text-[0.9rem] m-0" style="color:var(--wb-ink-500)">Complete the form and we will confirm a batch that fits your week.</p>
+            </div>
+
+            <h2 id="form-title" class="mb-1" style="font-size:1.6rem">Send an Enquiry</h2>
+            <p class="mb-6" style="color:var(--wb-ink-500)">Fields marked <span style="color:var(--wb-danger)">*</span> are required.</p>
+
+            <form id="contactForm" novalidate>
+              <div class="grid sm:grid-cols-2 gap-4 mb-4">
+                <div class="wb-field">
+                  <label class="wb-label" for="parentName">Parent Name <span class="wb-req" aria-hidden="true">*</span></label>
+                  <input class="wb-input" type="text" id="parentName" name="parentName" autocomplete="name"
+                         placeholder="e.g. Priya Sharma" data-rules="required|minlen:3" required
+                         aria-describedby="parentNameError" />
+                  <p class="wb-field-error" id="parentNameError"></p>
+                </div>
+
+                <div class="wb-field">
+                  <label class="wb-label" for="email">Email <span class="wb-req" aria-hidden="true">*</span></label>
+                  <input class="wb-input" type="email" id="email" name="email" autocomplete="email"
+                         placeholder="you@example.com" data-rules="required|email" required
+                         aria-describedby="emailError" />
+                  <p class="wb-field-error" id="emailError"></p>
+                </div>
+
+                <div class="wb-field">
+                  <label class="wb-label" for="phone">Phone <span class="wb-req" aria-hidden="true">*</span></label>
+                  <input class="wb-input" type="tel" id="phone" name="phone" autocomplete="tel"
+                         placeholder="10-digit mobile number" data-rules="required|phone" required
+                         aria-describedby="phoneError" />
+                  <p class="wb-field-error" id="phoneError"></p>
+                </div>
+
+                <div class="wb-field">
+                  <label class="wb-label" for="childAge">Child's Age <span class="wb-req" aria-hidden="true">*</span></label>
+                  <select class="wb-select" id="childAge" name="childAge" data-rules="required" required
+                          aria-describedby="childAgeError">
+                    <option value="">Select an age group</option>
+                    <option value="4-6">4–6 years (Foundation Writing)</option>
+                    <option value="7-9">7–9 years (Handwriting Improvement)</option>
+                    <option value="10-12">10–12 years (Advanced Handwriting)</option>
+                    <option value="13+">13+ years (Calligraphy &amp; Creative Writing)</option>
+                    <option value="unsure">Not sure yet</option>
+                  </select>
+                  <p class="wb-field-error" id="childAgeError"></p>
+                </div>
+              </div>
+
+              <div class="wb-field mb-4">
+                <label class="wb-label" for="program">Program Interested In <span class="wb-req" aria-hidden="true">*</span></label>
+                <select class="wb-select" id="program" name="program" data-rules="required" required
+                        aria-describedby="programError">
+                  <option value="">Choose a program</option>
+                  <option value="Foundation Writing">Foundation Writing — Age 4–6</option>
+                  <option value="Handwriting Improvement">Handwriting Improvement — Age 7–9</option>
+                  <option value="Advanced Handwriting">Advanced Handwriting — Age 10–12</option>
+                  <option value="Calligraphy &amp; Creative Writing">Calligraphy &amp; Creative Writing — Age 13+</option>
+                  <option value="Summer Writing Intensive">Summer Writing Intensive — Ages 6–12</option>
+                  <option value="Left-Handed Writer Clinic">Left-Handed Writer Clinic — Ages 6–11</option>
+                  <option value="assessment">Not sure — please recommend</option>
+                </select>
+                <p class="wb-field-error" id="programError"></p>
+              </div>
+
+              <div class="wb-field mb-5">
+                <label class="wb-label" for="message">Message <span class="wb-req" aria-hidden="true">*</span></label>
+                <textarea class="wb-textarea" id="message" name="message" rows="5"
+                          placeholder="Share anything helpful — your child's current writing level, preferred days or times, or questions about batches."
+                          data-rules="required|minlen:20" required aria-describedby="messageError messageHelp"></textarea>
+                <p class="wb-help" id="messageHelp">A sentence or two is plenty. Minimum 20 characters.</p>
+                <p class="wb-field-error" id="messageError"></p>
+              </div>
+
+              <div class="wb-field mb-6">
+                <label class="wb-check" for="consent">
+                  <input type="checkbox" id="consent" name="consent" data-rules="required" required aria-describedby="consentError" />
+                  <span>I agree to be contacted about classes, batches and enrolment. <span class="wb-req" aria-hidden="true">*</span></span>
+                </label>
+                <p class="wb-field-error" id="consentError"></p>
+              </div>
+
+              <div class="flex flex-col sm:flex-row gap-3 sm:items-center">
+                <button type="submit" class="wb-btn wb-btn-primary wb-btn-lg">
+                  <span aria-hidden="true">✎</span> Send Enquiry
+                </button>
+                <p class="wb-note m-0">This demo form does not send data to a server.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- contact info -->
+        <div class="lg:col-span-5 wb-reveal" data-delay="2">
+
+          <div class="wb-card overflow-hidden mb-6">
+            <div class="px-6 py-4" style="background:var(--wb-primary)">
+              <p class="text-[0.72rem] font-bold uppercase tracking-widest m-0" style="color:var(--wb-cream-200)">Reach Us</p>
+              <p class="text-white font-bold m-0" style="font-size:1.08rem">WriteBright Centre</p>
+            </div>
+            <div class="p-6">
+              <ul class="list-none m-0 p-0 flex flex-col gap-5">
+                <li class="flex items-start gap-3">
+                  <span class="grid place-items-center w-11 h-11 rounded-xl shrink-0" style="background:var(--wb-primary-100,#ECE9F5);color:var(--wb-primary)" aria-hidden="true">
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+                  </span>
+                  <span>
+                    <span class="block font-bold mb-0.5">Phone</span>
+                    <a class="wb-tap" href="tel:+919876543210" style="color:var(--wb-ink-500)">+91 98765 43210</a>
+                  </span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="grid place-items-center w-11 h-11 rounded-xl shrink-0" style="background:var(--wb-primary-100,#ECE9F5);color:var(--wb-primary)" aria-hidden="true">
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg>
+                  </span>
+                  <span>
+                    <span class="block font-bold mb-0.5">Email</span>
+                    <a href="mailto:hello@writebright.example" style="color:var(--wb-ink-500)">hello@writebright.example</a>
+                  </span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="grid place-items-center w-11 h-11 rounded-xl shrink-0" style="background:var(--wb-accent-100,#FDECDC);color:#B56A2C" aria-hidden="true">
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+                  </span>
+                  <span>
+                    <span class="block font-bold mb-0.5">Class Hours</span>
+                    <span style="color:var(--wb-ink-500)">Monday – Saturday, 9:00 AM – 8:00 PM<br />Sunday, 10:00 AM – 4:00 PM</span>
+                  </span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="grid place-items-center w-11 h-11 rounded-xl shrink-0" style="background:var(--wb-accent-100,#FDECDC);color:#B56A2C" aria-hidden="true">
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10.5c0 5.5-8 11.5-8 11.5s-8-6-8-11.5a8 8 0 0 1 16 0z"/><circle cx="12" cy="10.5" r="3"/></svg>
+                  </span>
+                  <span>
+                    <span class="block font-bold mb-0.5">Location</span>
+                    <span style="color:var(--wb-ink-500)">2nd Floor, Learning Arcade<br />MG Road, Bengaluru 560001</span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- FAQ shortcut -->
+          <div class="wb-card wb-card-paper p-6">
+            <p class="wb-eyebrow mb-2">FAQ Shortcut</p>
+            <h2 class="mb-2" style="font-size:1.2rem">Looking for a quick answer?</h2>
+            <p class="text-[0.93rem] mb-4" style="color:var(--wb-ink-500)">
+              The most common questions about age groups, practice and payments are answered on our
+              FAQs.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="index.html#faq" class="wb-btn wb-btn-quiet wb-btn-sm">Read FAQs</a>
+              <a href="pricing.html" class="wb-btn wb-btn-quiet wb-btn-sm">See Pricing</a>
+              <a href="programs.html" class="wb-btn wb-btn-quiet wb-btn-sm">See Programs</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHAT HAPPENS NEXT ================= -->
+  <section class="wb-section wb-paper relative overflow-hidden" aria-labelledby="next-title">
+    <div class="relative mx-auto w-full max-w-[1280px] px-5 sm:px-6">
+      <div class="max-w-2xl mb-10 wb-reveal mx-auto text-center">
+        <p class="wb-eyebrow mb-3"><span aria-hidden="true">✎</span> After You Enquire</p>
+        <h2 id="next-title" class="mb-3 font-extrabold text-[1.95rem] sm:text-[2.25rem]">What Happens <span >Next</span></h2>
+        <p class="wb-lead mb-0">Three simple steps between your enquiry and the first class.</p>
+      </div>
+
+      <ol class="grid gap-5 sm:grid-cols-3 list-none m-0 p-0">
+        <li class="wb-card p-6 wb-reveal" data-delay="1">
+          <span class="grid place-items-center w-12 h-12 rounded-2xl text-lg font-extrabold text-white mb-4" style="background:var(--wb-primary)" aria-hidden="true">1</span>
+          <h3 class="mb-2" style="font-size:1.1rem">We reply</h3>
+          <p class="m-0 text-[0.93rem]" style="color:var(--wb-ink-500)">Within one working day with suggested programs and batch times.</p>
+        </li>
+        <li class="wb-card p-6 wb-reveal" data-delay="2">
+          <span class="grid place-items-center w-12 h-12 rounded-2xl text-lg font-extrabold text-white mb-4" style="background:var(--wb-accent);color:#3A2413" aria-hidden="true">2</span>
+          <h3 class="mb-2" style="font-size:1.1rem">Short assessment</h3>
+          <p class="m-0 text-[0.93rem]" style="color:var(--wb-ink-500)">A brief look at your child's writing, in person or from a sample photo.</p>
+        </li>
+        <li class="wb-card p-6 wb-reveal" data-delay="3">
+          <span class="grid place-items-center w-12 h-12 rounded-2xl text-lg font-extrabold text-white mb-4" style="background:var(--wb-primary-800,#332A4D)" aria-hidden="true">3</span>
+          <h3 class="mb-2" style="font-size:1.1rem">First class</h3>
+          <p class="m-0 text-[0.93rem]" style="color:var(--wb-ink-500)">You receive the parent dashboard login and a welcome practice sheet.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= FIND US ================= -->
+  <section class="wb-section bg-white pt-0" aria-labelledby="map-title">
+    <div class="mx-auto w-full max-w-[1280px] px-5 sm:px-6">
+      <div class="max-w-2xl mb-10 wb-reveal mx-auto text-center"><br>
+        <p class="wb-eyebrow mb-3"><span aria-hidden="true">✎</span> Visit Us</p>
+        <h2 id="map-title" class="mb-3 font-extrabold text-[1.95rem] sm:text-[2.25rem]">Find the <span>Centre</span></h2>
+        <p class="wb-lead mb-0">Drop in during class hours — walk-ins are welcome for a quick look around.</p>
+      </div>
+      <div class="grid lg:grid-cols-12 gap-6 items-stretch">
+        <div class="lg:col-span-7 wb-reveal" data-delay="1">
+          <div class="wb-card overflow-hidden p-2 h-full">
+            <iframe title="Map showing the WriteBright centre on MG Road, Bengaluru" src="https://www.openstreetmap.org/export/embed.html?bbox=77.5950%2C12.9690%2C77.6180%2C12.9830&amp;layer=mapnik&amp;marker=12.9757%2C77.6063" class="w-full rounded-[1.25rem] border-0" style="height:100%;min-height:320px" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="lg:col-span-5 wb-reveal" data-delay="2">
+          <div class="wb-card wb-card-cream p-6 sm:p-8 h-full flex flex-col">
+            <p class="text-[0.72rem] font-bold uppercase tracking-widest text-ink-400 mb-1">WriteBright Centre</p>
+            <p class="font-bold m-0 mb-4" style="font-size:1.25rem;color:var(--wb-primary)">2nd Floor, Learning Arcade<br />MG Road, Bengaluru 560001</p>
+            <ul class="list-none m-0 p-0 flex flex-col gap-3 text-[0.93rem] font-medium" style="color:var(--wb-ink-600)">
+              <li class="flex items-center gap-2"><span aria-hidden="true">✎</span> Mon–Sat, 9:00 AM – 8:00 PM</li>
+              <li class="flex items-center gap-2"><span aria-hidden="true">✎</span> Sunday, 10:00 AM – 4:00 PM</li>
+              <li class="flex items-center gap-2"><span aria-hidden="true">✎</span> +91 98765 43210</li>
+            </ul>
+            <div class="mt-auto pt-6 flex flex-col sm:flex-row gap-3">
+              <a href="https://www.openstreetmap.org/?mlat=12.9757&amp;mlon=77.6063#map=16/12.9757/77.6063" target="_blank" rel="noopener" class="wb-btn wb-btn-primary">Get Directions</a>
+              <a href="tel:+919876543210" class="wb-btn wb-btn-outline">Call Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="relative wb-paper-purple overflow-hidden" aria-labelledby="contact-cta-title">
+    <div class="pointer-events-none absolute inset-0 wb-dots-cream opacity-50" aria-hidden="true"></div>
+    <div class="relative mx-auto w-full max-w-[1280px] px-5 sm:px-6 py-16 lg:py-20 text-center">
+      <div class="max-w-2xl mx-auto wb-reveal">
+        <h2 id="contact-cta-title" class="text-white mb-4">Prefer to Talk First?</h2>
+        <p class="mb-8" style="color:rgba(255,255,255,.85)">
+          Call us during class hours or send an enquiry — we will suggest the right program
+          and batch times within one working day.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="#contactForm" class="wb-btn wb-btn-accent wb-btn-lg">Send an Enquiry</a>
+          <a href="tel:+919876543210" class="wb-btn wb-btn-ghost wb-btn-lg">Call +91 98765 43210</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer"></div>
+
+<script src="js/navbar.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/main.js"></script>
+<script>
+/* Contact page behaviour: prefill from ?intent=enroll&program=… and wire the form. */
+(function () {
+  var form = document.getElementById("contactForm");
+  var banner = document.getElementById("enrollBanner");
+  var params = new URLSearchParams(window.location.search);
+
+  if (params.get("intent") === "enroll") {
+    banner.classList.remove("hidden");
+    var plan = params.get("plan");
+    if (plan) {
+      var intro = document.getElementById("message");
+      if (intro && !intro.value) {
+        intro.value = "We are interested in the " + plan + " plan. Please let us know the next available batch times.";
+      }
+    }
+  }
+  var program = params.get("program");
+  if (program) {
+    var sel = document.getElementById("program");
+    Array.prototype.forEach.call(sel.options, function (o) {
+      if (o.textContent.trim().indexOf(program) === 0 || o.value === program) sel.value = o.value;
+    });
+    banner.classList.remove("hidden");
+  }
+  var instructor = params.get("instructor");
+  if (instructor && window.WB) {
+    var m = document.getElementById("message");
+    if (m && !m.value) m.value = "We would like to enrol with " + instructor + ". Please share availability.";
+  }
+
+  if (form && window.WB) {
+    window.WB.demoSubmit(form, "Thanks! This demo form has no server connection, so nothing was actually sent. In a live site your enquiry would reach the WriteBright team.");
+  }
+})();
+</script>
+</body>
+</html>
