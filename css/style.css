@@ -90,6 +90,10 @@ body {
   overflow-x: hidden;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 body.is-locked {
   overflow: hidden;
 }
@@ -2614,10 +2618,10 @@ body.dark-theme .wb-footer h3,
 body.dark-theme .wb-footer .wb-footer-title {
   color: #cfc5ec;
 }
-body.dark-theme .wb-footer a {
+body.dark-theme .wb-footer a:not(.wb-btn) {
   color: #b7b1c8;
 }
-body.dark-theme .wb-footer a:hover {
+body.dark-theme .wb-footer a:not(.wb-btn):hover {
   color: #ffc48f;
 }
 body.dark-theme .wb-footer .wb-badge {

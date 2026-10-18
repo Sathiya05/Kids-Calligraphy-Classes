@@ -26,7 +26,7 @@
     pricing: BASE + "pricing.html",
     login: BASE + "login.html",
     contact: BASE + "contact.html",
-    parentDash: BASE + "dashboard/user-dashboard.html",
+    parentDash: BASE + "dashboard/parent-dashboard.html",
     adminDash: BASE + "dashboard/admin-dashboard.html"
   };
 
@@ -96,8 +96,8 @@
       dropdown: [
         {
           href: PAGES.parentDash,
-          label: "User Dashboard",
-          match: ["user-dashboard"]
+          label: "Parent Dashboard",
+          match: ["parent-dashboard"]
         },
         {
           href: PAGES.adminDash,

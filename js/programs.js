@@ -718,6 +718,11 @@ function picture(base, cls, alt, attrs) {
       var btn = e.target.closest("[data-filter]");
       if (!btn) return;
       var v = btn.getAttribute("data-filter");
+      WB.qsa("[data-filter]", host).forEach(function (p) {
+        var on = p === btn;
+        p.setAttribute("aria-pressed", on ? "true" : "false");
+        p.classList.toggle("is-active", on);
+      });
       WB.qsa("#instructorsList [data-tags]").forEach(function (it) {
         var tags = (it.getAttribute("data-tags") || "").split(" ");
         var match = v === "all" || tags.indexOf(v) !== -1;
